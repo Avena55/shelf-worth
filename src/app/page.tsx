@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+import GetStartedButton from "@/components/Navbar/GetStartedButton";
+import { signIn } from "next-auth/react";
 import Image from "next/image";
 
 export default function Home() {
@@ -22,7 +24,7 @@ export default function Home() {
             the shelves of like-minded bibliophiles. With Shelf-Worth, each book
             on your virtual shelf is a chapter in the story of you.{" "}
           </p>
-          <button className="btn">Get Started</button>
+          <GetStartedButton />
         </div>
       </div>
     </div>
